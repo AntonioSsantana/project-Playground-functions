@@ -20,20 +20,31 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(string) {
-  
+
   let palavraSeparada = string.split(' ');
   return palavraSeparada
 } console.log(splitSentence('go Trybe'));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(array) {
+   
+  for (let i = 0; i < array.length; i += 1){
+
+    let resultado = array[array.length - 1] + ',' + ' ' + array[0];
+    return resultado;
+   }
+  
+
+} 
+var array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+console.log(concatName(array))
 
 // Desafio 5
 function footballPoints() {
-  // seu código aqui
-}
+  
+ 
+   
+} 
 
 // Desafio 6
 function highestCount() {
