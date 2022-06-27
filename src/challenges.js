@@ -8,7 +8,7 @@ function compareTrue(parametro1, parametro2) {
 
     return false;
   }
-} 
+}
 console.log(compareTrue(true, true))
 
 // Desafio 2
@@ -19,9 +19,11 @@ function calcArea(base, height) {
 } console.log(calcArea(10, 50));
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
-}
+function splitSentence(string) {
+  
+  let palavraSeparada = string.split(' ');
+  return palavraSeparada
+} console.log(splitSentence('go Trybe'));
 
 // Desafio 4
 function concatName() {
