@@ -27,37 +27,65 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(array) {
-   
-  for (let i = 0; i < array.length; i += 1){
+
+  for (let i = 0; i < array.length; i += 1) {
 
     let resultado = array[array.length - 1] + ',' + ' ' + array[0];
     return resultado;
-   }
-  
+  }
 
-} 
+
+}
 var array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 console.log(concatName(array))
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  
+
   let pontuacaoWins = wins * 3;
   let pontuacaoTies = ties * 1;
   let points = pontuacaoWins + pontuacaoTies;
-  
+
   return points;
 
 } console.log(footballPoints(14, 8));
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(array) {
+  let maiorNumero = [];
+  let repetido = 0;
+
+  for (let i of array) {
+
+    if (maiorNumero <= i.length) {
+
+     maiorNumero = maiorNumero.push(i);
+  
+    }
+
+    for (let index in array) {
+
+      if (maiorNumero === array[i]) {
+
+        repetido += 1;
+        return repetido;
+      } 
+      
+    } 
+
+
+  }
+
 }
+
+let arr = [9, 1, 2, 3, 9, 5, 7];
+console.log(highestCount(arr))
 
 // Desafio 7
 function catAndMouse() {
-  // seu código aqui
+  
+
+  
 }
 
 // Desafio 8
