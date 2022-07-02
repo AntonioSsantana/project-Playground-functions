@@ -94,8 +94,43 @@ console.log(catAndMouse())
 
 // Desafio 8
 function fizzBuzz(array) {
- 
+
+  for (let i = 0; i < arr.length; i += 1) {
+   
+    let arrayString = [];
+
+    if (arr[i] % 3 == 0 && arr[i] % 5 == 0) {
+
+      let stringFizz = 'fizz';
+      let stringBuzz = 'buzz';
+
+      arrayString.push(stringFizz, stringBuzz);
+      return arrayString;
+    } else if (arr[i] % 3 == 0) {
+     
+      let stringFizz = 'fizz';
+
+      arrayString.push(stringFizz);
+      return arrayString;
+    } else if (arr[i] % 5 == 0) {
+      
+      let stringBuzz = 'buzz';
+
+      arrayString.push(stringBuzz);
+      return arrayString;
+    } else {
+
+      let stringBug = 'bug!';
+      
+      arrayString.push(stringBug);
+      return arrayString;
+    }
+  }
+
+
+  return resultado;
 }
+
 let arr = [9, 25];
 console.log(fizzBuzz(arr))
 
