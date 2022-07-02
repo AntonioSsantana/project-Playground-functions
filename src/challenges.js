@@ -95,44 +95,31 @@ console.log(catAndMouse())
 // Desafio 8
 function fizzBuzz(array) {
 
-  for (let i = 0; i < arr.length; i += 1) {
-   
-    let arrayString = [];
+  let resultado = [];
 
-    if (arr[i] % 3 == 0 && arr[i] % 5 == 0) {
+  for (let i of array) {
 
-      let stringFizz = 'fizz';
-      let stringBuzz = 'buzz';
+    if (i % 3 === 0 && i % 5 === 0) {
 
-      arrayString.push(stringFizz, stringBuzz);
-      return arrayString;
-    } else if (arr[i] % 3 == 0) {
-     
-      let stringFizz = 'fizz';
+      resultado.push('fizzBuzz');
+    } else if (i % 3 === 0) {
 
-      arrayString.push(stringFizz);
-      return arrayString;
-    } else if (arr[i] % 5 == 0) {
-      
-      let stringBuzz = 'buzz';
+      resultado.push('fizz');
+    } else if (i % 5 === 0) {
 
-      arrayString.push(stringBuzz);
-      return arrayString;
+      resultado.push('buzz');
     } else {
 
-      let stringBug = 'bug!';
-      
-      arrayString.push(stringBug);
-      return arrayString;
+      resultado.push('bug!');
     }
+
   }
-
-
   return resultado;
+
 }
 
 let arr = [9, 25];
-console.log(fizzBuzz(arr))
+console.log(fizzBuzz(arr));
 
 // Desafio 9
 function encode() {
